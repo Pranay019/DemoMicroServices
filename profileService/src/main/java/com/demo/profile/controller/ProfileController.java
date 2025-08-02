@@ -53,7 +53,7 @@ public class ProfileController {
 	
 	
 	@PatchMapping("/updateuser")
-	public ResponseEntity<UserProfile> updateUser(){
+	public ResponseEntity<UserProfile> updateUser(@RequestBody UserProfile user){
 		
 		UserProfile userProdile = new UserProfile();
 		
