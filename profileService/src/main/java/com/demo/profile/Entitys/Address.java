@@ -2,6 +2,8 @@ package com.demo.profile.Entitys;
 
 import java.io.Serializable;
 
+import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Embeddable;
 import lombok.AllArgsConstructor;
@@ -12,6 +14,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@JacksonXmlRootElement(localName = "address")
 public class Address implements Serializable {
 
 	private static final long serialVersionUID = 1L;
