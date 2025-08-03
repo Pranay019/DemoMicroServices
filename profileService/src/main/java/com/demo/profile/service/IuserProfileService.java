@@ -14,4 +14,6 @@ public interface IuserProfileService {
 	UserProfile fetchUser(Integer id);
 
 	List<UserProfile> getallusers();
+
+	UserProfile updateUser(UserProfile user);
 }

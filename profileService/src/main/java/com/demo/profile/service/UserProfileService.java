@@ -34,4 +34,10 @@ public class UserProfileService implements IuserProfileService {
 		return allusers;
 	}
 
+	@Override
+	public UserProfile updateUser(UserProfile user) {
+		
+		return this.userRepo.updateUser(user);
+	}
+
 }

@@ -55,7 +55,10 @@ public class ProfileController {
 	@PatchMapping("/updateuser")
 	public ResponseEntity<UserProfile> updateUser(@RequestBody UserProfile user){
 		
-		UserProfile userProdile = new UserProfile();
+		UserProfile userProdile = this.userProfileService.updateUser(user);
+		
+		
+		
 		
 		return ResponseEntity.ok(userProdile);
 	}

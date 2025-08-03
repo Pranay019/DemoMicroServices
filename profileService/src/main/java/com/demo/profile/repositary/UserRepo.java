@@ -44,6 +44,19 @@ public class UserRepo {
 		return allUSers;
 	}
 
+	public UserProfile updateUser(UserProfile user) {
+		
+		if(user.getId() == null) {
+			throw new RuntimeException("ID Should not bee Null");
+		}
+		
+		UserProfile save = this.userRepo.save(user);
+		
+		
+		
+		return save;
+	}
+
 	
 	
 	
